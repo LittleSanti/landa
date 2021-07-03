@@ -31,5 +31,5 @@ Ampliaciones futuras
 		* anywords(indexed_text) like 'x y%'
 		Realiza la comparación sobre varias palabras consecutivas.
 		* concat(indexed_text1,indexed_text2,...): Concatena y produce un indexed_text nuevo.
-		
+	-Permitir combinar nombres indexados con no indexados: Para eso serviría una abstracción con	dos implementaciones: El compareTo de cada una de ellas debería contemplar que el dato recibido pertenezca a una o a otra.
 	- Temo que tendremos que reimplementar TreeSet para operar con valores IndexedText, pues si queremos independizar compareTo del diccionario usado (y no queremos meter el diccionario como variable de estado), no tendremos más remedio que introducir el CONTEXTO como parámetro de entrada en compareTo.
